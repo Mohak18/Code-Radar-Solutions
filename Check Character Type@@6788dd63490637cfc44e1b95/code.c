@@ -3,11 +3,11 @@
 int main()
 {
     char a;
-    scanf("%c", &a);
-    if(a = 'a' || a = 'e' || a = 'i' || a = 'o' || a = 'u' a = 'A' || a = 'E' || a = 'I' || a = 'O' || a = 'U'){
+    scanf("%s", &a);
+    if(a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u' a == 'A' || a == 'E' || a == 'I' || a == 'O' || a == 'U'){
         printf("Vowel");
     }
-    esle if(a>='a' && a<='z'){
+    esle if(a>='a' && a<='z') || (a>='A' && a<='Z'){
         printf("Consonant");
     }
     esle if(a>='0' && a<='9'){
