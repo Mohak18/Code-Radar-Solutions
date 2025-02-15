@@ -2,9 +2,9 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,n;
-    scanf("%d", &n);
-    for(a = 1,a <= n,a++){
+    int a,b,N;
+    scanf("%d", &N);
+    for(a = 1,a <= N,a++){
         for(b = a,b>0,b--){
             printf("*");
 
