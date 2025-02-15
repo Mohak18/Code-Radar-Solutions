@@ -7,7 +7,7 @@ int main()
     if(a = 'a' || a = 'e' || a = 'i' || a = 'o' || a = 'u' a = 'A' || a = 'E' || a = 'I' || a = 'O' || a = 'U'){
         printf("Vowel");
     }
-    esle if(a>='a' && a<='z') || (a>='A' && a<='Z'){
+    esle if(a>='a' && a<='z'){
         printf("Consonant");
     }
     esle if(a>='0' && a<='9'){
