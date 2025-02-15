@@ -2,13 +2,14 @@
 #include<stdio.h>
 int main()
 {
-    int a;
-    scanf("%d", &a);
-    for(0,a+1,){
-        for(0,a,){
+    int a,b,n;
+    scanf("%d", &n);
+    for(a = 0,a,){
+        for(b = 0,a,){
             printf("*");
 
         }
+        printf("\n");
     }
     return 0;
 }
