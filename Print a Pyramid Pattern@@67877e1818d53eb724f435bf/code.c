@@ -10,13 +10,13 @@ int main()
         for(int k=1;k<=N-i;k++){
             printf(" ");
         }
-    }
+    
         
         for(j=1;j<=nst;j++){
             printf("*");
         }
         nst += 2;
         printf("\n");
-    
+    }
     return 0;
 }
