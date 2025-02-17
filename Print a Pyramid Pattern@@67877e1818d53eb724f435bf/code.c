@@ -11,12 +11,12 @@ int main()
             printf(" ");
         }
     }
-    for(i=1;i<=N;i++){
+        
         for(j=1;j<=nst;j++){
             printf("*");
         }
         nst += 2;
         printf("\n");
-    }
+    
     return 0;
 }
