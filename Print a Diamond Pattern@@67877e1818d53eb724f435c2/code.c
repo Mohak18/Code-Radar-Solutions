@@ -18,7 +18,7 @@ int main(){
     }
     nst = 1;
     for(int i = 1; i < n;i++){
-        for(int k = n-i; k>1;k--){
+        for(int k = 1; k<=i;k++){
             printf(" ");
         }
         for(int j = nst; j>n;j--){
