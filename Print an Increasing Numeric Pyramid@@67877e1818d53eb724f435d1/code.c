@@ -15,7 +15,7 @@ int main(){
             }
             else{
                 printf(" ");
-                printf("%d",a);
+                printf("%d ",a);
                 a+=1;
             }
             
