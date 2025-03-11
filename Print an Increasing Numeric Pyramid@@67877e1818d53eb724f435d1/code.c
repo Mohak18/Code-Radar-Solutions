@@ -13,7 +13,7 @@ int main(){
                 printf(" ");
             }
             else{
-                printf("%d", j);
+                printf("%d", k);
                 a+=1;
             }
             
