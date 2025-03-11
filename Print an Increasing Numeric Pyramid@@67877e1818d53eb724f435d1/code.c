@@ -14,8 +14,9 @@ int main(){
             }
             else{
                 printf("%d", a);
+                a+=1;
             }
-            a+=1;
+            
         }
         a = 1;
         printf("\n");
