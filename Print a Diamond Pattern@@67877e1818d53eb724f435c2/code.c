@@ -14,10 +14,7 @@ int main(){
         }
         nst = 1;
         printf("\n");
-        for(int l = n;l<=n+i;l++){
-            printf(" ");
-        }
-    
+        
     }
     return 0;
 }
