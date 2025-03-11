@@ -10,8 +10,9 @@ int main(){
         }
         for(int j = 1; j <= nst;j++){
             printf("*");
-            nst+=2;
+            
         }
+        nst+=2;
         printf("\n");
 
     }
