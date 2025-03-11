@@ -8,12 +8,12 @@ int main(){
         for(int j =1; j<=n-i;j++){
                 printf(" ");
         }
-        for(int k = 1; k<n+i;k++){
+        for(int k = 1; k<=n+i-1;k++){
             if(k%2==0){
                 printf(" ");
             }
             else{
-                printf("%d", k);
+                printf("%d", a);
                 a+=1;
             }
             
