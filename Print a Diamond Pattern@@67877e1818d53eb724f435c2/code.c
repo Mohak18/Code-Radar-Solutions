@@ -14,13 +14,7 @@ int main(){
         }
         nst = 1;
         printf("\n");
-        for(int l = n;l<=n+i;l++){
-            printf(" ");
-        }
-        for(int m = n; m>i;m--){
-            printf("*");
-        }
-        printf("\n");
+
     }
     return 0;
 }
