@@ -10,11 +10,10 @@ int main(){
         }
         for(int k = 1; k<n+i;k++){
             if(k%2==0){
-                printf(" ");
+                printf("  ");
             }
             else{
                 printf("%d", a);
-
             }
             a+=1;
         }
