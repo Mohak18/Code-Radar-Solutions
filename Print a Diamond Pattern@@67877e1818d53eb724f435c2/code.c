@@ -16,6 +16,7 @@ int main(){
         printf("\n");
 
     }
+    nst = 1;
     for(int i = 1; i < n;i++){
         for(int k = n-i; k>1;k--){
             printf(" ");
