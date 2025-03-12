@@ -1,7 +1,7 @@
 // Your code here...
-int isPrime(num){
+int isPrime(int num){
     int n;
-    int prime;
+    int prime =0;
     for(int i = 2; i <= n;i++){
         if(n%i == 0){
             prime += 1;
