@@ -21,8 +21,9 @@ int isPrime(int num){
 int main(){
     int t;
     scanf("%d", &t);
+    int num;
     while(t--){
-        int num;
+        
         scanf("%d", &num);
         
     }
