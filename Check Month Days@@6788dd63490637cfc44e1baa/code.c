@@ -9,7 +9,10 @@ int main(){
     else if(a==8){
         printf("31");
     }
-    else if(a%2==0){
+    else if(a<=6 && a%2==0){
+        printf("30");
+    }
+    else if(a>6 && a%2==0){
         printf("30");
     }
     else{
