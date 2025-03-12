@@ -10,10 +10,10 @@ int isPrime(int num){
 
     }
     if(prime == 2){
-        return '1';
+        return 1;
     }
     else{
-        return '0';
+        return 0;
     }
 }
 int main(){
