@@ -19,21 +19,3 @@ int isPrime(int num) {
         return 0;  // The number is not prime
     }
 }
-
-int main() {
-    int t;
-    scanf("%d", &t);  // Input number of test cases
-
-    int nums[t];  // Array to store input numbers
-    // Input all numbers for the test cases
-    for (int i = 0; i < t; i++) {
-        scanf("%d", &nums[i]);
-    }
-
-    // Output the results for each test case
-    for (int i = 0; i < t; i++) {
-        printf("%d\n", isPrime(nums[i]));  // Print result for each number
-    }
-
-    return 0;
-}
