@@ -6,10 +6,11 @@ int main(){
             for(int l = 0;l<n-j;l++){
                 printf(" ");
             }
-        }
-        for(int k = 0;k<j;k++){
+            for(int k = 0;k<j;k++){
             printf("*");
         }
+        }
+        
     }
     return 0;
 }
