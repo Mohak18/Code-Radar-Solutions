@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int getBinaryAsNumber(int num) {
-    int binary = 0, place = 1;
+long long getBinaryAsNumber(int num) {
+    long long binary = 0, place = 1;
     
     while (num > 0) {
         int lastBit = num % 2;  // Get the last binary digit
@@ -21,10 +21,10 @@ int main() {
     scanf("%d", &num);
 
     // Get binary representation as a number
-    int binaryNumber = getBinaryAsNumber(num);
+    long long binaryNumber = getBinaryAsNumber(num);
 
     // Print the result
-    printf("%d", binaryNumber);
+    printf("%lld", binaryNumber);
 
     return 0;
 }
