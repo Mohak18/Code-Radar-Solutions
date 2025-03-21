@@ -2,7 +2,7 @@
 void printPrimesInRange(int a,int b){
     int count =0;
     if(a==b){
-        printf("No primr numbers")
+        printf("No prime numbers");
     }
     for(int i=a;i<=b;i++){
         if(i<1){
