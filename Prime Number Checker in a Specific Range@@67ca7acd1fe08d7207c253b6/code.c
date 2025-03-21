@@ -10,9 +10,11 @@ int printPrimesInRange(int a,int b){
                 count+=1;
             }
         }
-        if(count==0){
-        return i;
+        
+    
     }
+    if(count==0){
+        return i;
     }
     
 }
