@@ -1,17 +1,13 @@
 #include<stdio.h>
 int main(){
     int n;
-    for(int i = 0;i<2*n-1;i++){
-        for(int j = 0; j<n;j++){
-            for(int l = 0;l<n-i;l++){
-                printf(" ");
-                for(int k = 0;k<l;k++){
-                    printf("*");
-            }
-            }
-            
+    for(int i = 1; i <= n;i++){
+        for(int j = 1;j<=n-i-1;j++){
+            printf(" ");
         }
-        
+        for(int k = 1;k<=2*i-1;k++){
+            printf("*");
+        }
     }
     return 0;
 }
