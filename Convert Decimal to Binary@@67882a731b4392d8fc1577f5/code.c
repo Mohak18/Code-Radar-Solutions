@@ -1,30 +1,30 @@
-// Your code here...
 #include <stdio.h>
 
-// Function to print the binary representation of a 32-bit number
-void printBinary(int num) {
-    for (int i = 31; i >= 0; i--) {
-        printf("%d", (num >> i) & 1); // Extract each bit
+int getBinaryAsNumber(int num) {
+    int binary = 0, place = 1;
+    
+    while (num > 0) {
+        int lastBit = num % 2;  // Get the last binary digit
+        binary += lastBit * place;  // Add to binary number
+        place *= 10;  // Shift place value
+        num /= 2;  // Move to the next bit
     }
-    printf("\n");
+    
+    return binary;
 }
 
 int main() {
-    int num, flippedNum;
-
+    int num;
+    
     // Taking user input
-
+   
     scanf("%d", &num);
 
-    // Flipping all bits using bitwise NOT (~)
-    flippedNum = ~num;
+    // Get binary representation as a number
+    int binaryNumber = getBinaryAsNumber(num);
 
-    // Printing original and flipped binary
-    printf("Original binary: ");
-    printBinary(num);
-    
-    printf("Flipped binary:  ");
-    printBinary(flippedNum);
+    // Print the result
+    printf("%d", binaryNumber);
 
     return 0;
 }
