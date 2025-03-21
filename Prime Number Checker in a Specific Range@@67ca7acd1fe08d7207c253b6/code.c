@@ -16,6 +16,6 @@ void printPrimesInRange(int a,int b){
         
     
     }
-    return;
+
     
 }
