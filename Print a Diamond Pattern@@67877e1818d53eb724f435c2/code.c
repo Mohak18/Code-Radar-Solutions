@@ -9,6 +9,7 @@ int main(){
         for(int k = 1;k<2*i;k++){
             printf("*");
         }
+        printf("\n");
     }
     return 0;
 }
