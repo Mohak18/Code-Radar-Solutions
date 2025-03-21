@@ -1,11 +1,10 @@
-// Your code here...
 #include <stdio.h>
 
 int main() {
-    int num, pos = 1;
+    int num, pos = 0;
 
     // Taking user input
-    
+
     scanf("%d", &num);
 
     // If number is 0, no set bits exist
@@ -14,7 +13,7 @@ int main() {
         return 0;
     }
 
-    // Find the lowest set bit position
+    // Find the lowest set bit position (0-based)
     while ((num & 1) == 0) {
         num = num >> 1; // Right shift to check next bit
         pos++;
