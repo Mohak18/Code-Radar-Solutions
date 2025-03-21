@@ -11,5 +11,9 @@ int main(){
         }
         printf("\n");
     }
+    for(int i = n-1;i>=1;i--){
+        printf("*");
+    }
+    printf("\n");
     return 0;
 }
