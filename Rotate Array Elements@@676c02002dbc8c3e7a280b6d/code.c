@@ -1,25 +1,42 @@
-// Your code here...
 #include<stdio.h>
-void rotate(int arr[],int n,int k){
-       for(int i=0;i<n-1;i++){
-        int temp=arr[i];
-        if(n-k>n-1) break;
-        arr[n-k]=arr[i];
-        arr[i+k]=temp;
-        k++;
-       }
-       
+
+// Function to rotate array to the right by k steps
+void rotate(int arr[], int n, int k) {
+    int temp[n];
+    k = k % n; // In case k > n
+
+    for (int i = 0; i < n; i++) {
+        temp[(i + k) % n] = arr[i];
+    }
+
+    // Copy rotated array back to original array
+    for (int i = 0; i < n; i++) {
+        arr[i] = temp[i];
+    }
 }
-int main(){
-    int n,arr[n],k;
-    scanf("%d",&n);
-    for(int i=0;i<n;i++){
-        scanf("%d ", &arr[i]);
+
+int main() {
+    int n, k;
+
+    // Read size of array
+    scanf("%d", &n);
+
+    int arr[n];  // Now n is known, OK in C99 or later
+
+    // Read array elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    scanf("%d",&k);
-    rotate(arr,n,k);
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
+
+    // Read k
+    scanf("%d", &k);
+
+    rotate(arr, n, k);
+
+    // Print rotated array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
     }
+
     return 0;
 }
