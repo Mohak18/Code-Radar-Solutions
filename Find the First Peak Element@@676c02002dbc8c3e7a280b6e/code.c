@@ -12,9 +12,9 @@ int main(){
     for(int i=0;i<n-1;i++){
         if((arr[i]>arr[i+1])&& (arr[i]>arr[i-1])){
         printf("%d", arr[i]);
-        else if(arr[n-1]>arr[n-2]) printf("%d", arr[n-1]); 
         break;
         }
+        else if(arr[n-1]>arr[n-2]) printf("%d", arr[n-1]); 
         
         
         
