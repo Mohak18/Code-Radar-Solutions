@@ -14,7 +14,7 @@ int main(){
         printf("%d", arr[i]);
         break;
         }
-        else if(arr[n-1]>arr[n-2]) printf("%d", arr[n-1]); 
+        else if(((arr[i])!>(arr[i+1]))&&(arr[n-1]>arr[n-2])) printf("%d", arr[n-1]); 
         
         
         
