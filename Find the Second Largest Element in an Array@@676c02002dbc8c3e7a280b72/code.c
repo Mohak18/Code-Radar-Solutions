@@ -11,9 +11,10 @@ int main(){
     }
     int max = arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]>max) arr[i]=max;
+        if(arr[i]>max) max=arr[i];
+        arr[i]=0;
     }
-    max = 0;
+    
     for(int i=0;i<n;i++){  
         if(arr[i]>max) max = arr[i];
     }
