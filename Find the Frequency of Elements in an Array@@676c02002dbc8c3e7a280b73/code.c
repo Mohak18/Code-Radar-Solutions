@@ -8,9 +8,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        for(int j=i+count+1;j<n-1;j++){
-            count=0;
+        for(int j=i+count;j<n-1;j++){
             if(arr[i]==arr[j]) count++;
+            count=count-j;
         }
         printf("%d %d\n", arr[i],count);
     }
