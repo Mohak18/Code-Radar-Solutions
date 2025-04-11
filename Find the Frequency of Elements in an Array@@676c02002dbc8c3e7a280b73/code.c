@@ -8,11 +8,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     
-    for(int j=count;j<n;j++){
+    for(int j=count;j<n-1;j++){
         if(arr[j]==arr[j+1]) count++;
         count=count-j;
     }
-    printf("%d %d\n", arr[i],count);
+    printf("%d %d\n", arr[j],count);
     
     return 0;
 
